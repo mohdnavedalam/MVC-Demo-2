@@ -26,6 +26,8 @@ namespace MVC_Demo_2.Migrations
                 new Video() { Title = "JQuery", Length = 130, Category = "Advanced", Format = "WMV" },
                 new Video() { Title = "LINQ", Length = 100, Category = "Basic", Format = "WMV" }
                 );
+
+            context.SaveChanges();
         }
     }
 }
