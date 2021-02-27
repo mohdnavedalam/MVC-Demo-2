@@ -9,8 +9,10 @@ namespace MVC_Demo_2
     {
         public static void Register(HttpConfiguration config)
         {
+            // Attribute Routing
             config.MapHttpAttributeRoutes();
 
+            // Convention based Routing
             config.Routes.MapHttpRoute(
                 name: "DefaultApi",
                 routeTemplate: "api/{controller}/{id}",
